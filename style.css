@@ -1,0 +1,15 @@
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(96, 205, 120);
+}
+
+h1 {
+ color: white;
+}
