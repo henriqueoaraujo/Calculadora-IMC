@@ -4,6 +4,7 @@
     --cor1: #60cd78;
     --cor2: #b8e8c6;
     --cor3: #152f22;
+    --cor4: #0f2218;
     --corfont: white;
 }
 
@@ -19,29 +20,35 @@ main{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor3);
+    background-image: linear-gradient(180deg, #152f22, #0f2218 );
 
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 450px;
+    min-width: 300px;
+    min-height: 450px;
     border-radius: 10px;
     background-color: var(--cor1);
     box-shadow: 0px 0px 8px 3px rgba(5, 12, 8, 0.368);
     align-items: center;
     justify-content: space-evenly;
+    transition: .4s;
+}
+
+.container:hover {   
+    box-shadow: 0px 0px 18px 10px rgba(5, 12, 8, 0.201);
+    margin-bottom: 20px;
 }
 
 h1 {
     display: flex;
     color: var(--corfont);
     font-size: 2.2rem;
+    padding-top: 10px;
     width: 300px;
     height: 70px;
-    border-bottom: solid 4px var(--cor3);
     justify-content: center;
     text-shadow: 1px 2px 5px rgba(82, 9, 62, 0.253);
 }
@@ -85,7 +92,7 @@ button {
     border: 0px;
     border-radius: 15px;
     transition: .3s;
-    letter-spacing: 1px;
+    letter-spacing: .7px;
     font-size: 1.2em;
     font: bold;
     color: var(--cor3);
@@ -98,13 +105,14 @@ button:hover {
 
 .result  {
     display: flex;
-    margin-top: 15px;
     align-items: center;
+    text-align: center;
     background-color: #1c392b;
     width: 250px;
-    height: 150px;
+    height: 130px;
     border-radius: 5px;
     user-select: none;
-    margin-bottom: 1em;
-    color: var(--cor2);
+    margin-bottom: .5em;
+    color: var(--corfont);
+    font-size: 1.3em;
 }
